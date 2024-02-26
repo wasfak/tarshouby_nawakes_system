@@ -79,9 +79,12 @@ export default function ExpPage() {
 
   return (
     <div>
-      <h1 className="font-bold text-center">
-        اصناف عليها علامة و الاكسبير ف خلال 6 شهور
-      </h1>
+      <div className="flex items-center justify-center">
+        <h1 className="font-bold text-center mt-2  p-2 bg-[#00ffee]  rounded-xl custom-shadow">
+          اصناف عليها علامة و الاكسبير ف خلال 6 شهور
+        </h1>
+      </div>
+
       <Button
         onClick={() => exportToExcel(displayData, "ExportedData")}
         className="ml-2"

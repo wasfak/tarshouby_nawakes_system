@@ -80,7 +80,12 @@ export default function SearchPage() {
 
   return (
     <div>
-      <h1 className="font-bold text-center">اصناف مطلوبة من الزملاء</h1>
+      <div className="flex items-center justify-center">
+        <h1 className="font-bold text-center mt-2  p-2 bg-[#00ffee]  rounded-xl custom-shadow">
+          اصناف مطلوبة من الزملاء
+        </h1>
+      </div>
+
       <Button
         onClick={() => exportToExcel(displayData, "ExportedData")}
         className="ml-2"

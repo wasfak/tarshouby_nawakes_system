@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import img from "../public/82a44949-7cfb-4c1f-8c08-6853d6d8011d.jpeg";
+
 const Navbar = () => {
   const pathName = usePathname();
 
@@ -24,7 +25,7 @@ const Navbar = () => {
               : "mx-2 flex items-center justify-center  rounded-md  p-2 transition duration-300"
           }
         >
-          Near Expire
+          مراجعة الاكسبير
         </Link>
         <Link
           href="/form"
@@ -34,7 +35,7 @@ const Navbar = () => {
               : "mx-2 flex items-center justify-center  rounded-md  p-2 transition duration-300"
           }
         >
-          Add Items
+          اضافة كود للبحث ف المخازن
         </Link>
         <Link
           href="/search"
@@ -44,21 +45,9 @@ const Navbar = () => {
               : "mx-2 flex items-center justify-center  rounded-md  p-2 transition duration-300"
           }
         >
-          Searched Codes
-        </Link>
-        <Link
-          href="/alama"
-          className={
-            pathName === "/alama"
-              ? "mx-2 flex items-center justify-center rounded-md text-[#00ffee] p-2 transition duration-300"
-              : "mx-2 flex items-center justify-center  rounded-md  p-2 transition duration-300"
-          }
-        >
-          alama
+          الاصناف المطلوبة من زملاء المشتريات
         </Link>
       </div>
-
-      <div>Logo</div>
     </nav>
   );
 };
